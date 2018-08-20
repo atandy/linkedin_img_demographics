@@ -4,6 +4,7 @@ This code will login to your LinkedIn account and conduct a search for you based
 
 In the end, you can slice the data by masc/fem scores and appearance, which enables you to see the breakdown of particular people based on your search. For example, you could search for "Senior Software Engineer at Google" and be able to perform the analysis to see the appearance and gender breakdown in that particular role.
 
+You should know that LinkedIn search results returns a maximum of 1000 results per search ([or 100 pages of results(https://www.linkedin.com/help/linkedin/answer/129?linkId=100000003284285)]). 
 
 ## Getting Started
 
@@ -40,6 +41,7 @@ Even more LOL.
 
 * [ClarifaiAPI](http://www.clarifai.com) - The image demographics API
 * [Pandas](https://pandas.pydata.org/) - For the data things.
+* [Selenium Python](https://selenium-python.readthedocs.io/index.html) - For the data scraping
 
 ## Contributing
 
