@@ -37,22 +37,19 @@ def get_image(image_url):
 
 # get data from db. 
 df = pd.read_sql("SELECT * from linkedin_people;", con=engine, index_col='id')
-
 df['clarifai_data'] = None
-counter = 0
-for idx, row in df.iterrows():
 
-    counter +=1
-    if counter > 500:
-        try:
-            image_url = row['image'].replace('"', '') # RIP
-        except AttributeError as e:
-            print(e)
-            df.at[idx, 'clarifai_data'] = None
-            continue
-        logging.info("Handling index: {} with URL: {}".format(idx, image_url))
-        prediction = get_image(image_url)
-        df.at[idx, 'clarifai_data'] = prediction
+# loop through the people from db and add their clarifai data to DF. 
+for idx, row in df.iterrows():
+    try:
+        image_url = row['image'].replace('"', '') # RIP
+    except AttributeError as e:
+        print(e)
+        df.at[idx, 'clarifai_data'] = None
+        continue
+    logging.info("Handling index: {} with URL: {}".format(idx, image_url))
+    prediction = get_image(image_url)
+    df.at[idx, 'clarifai_data'] = prediction
 
 # store data in a single csv
 df.to_csv('main_data.csv')
