@@ -62,4 +62,4 @@ You can't use this without asking me.
 
 ## Acknowledgments
 
-* The missed connection who I was trying to find via LinkedIn.
+Finding a needle in a haystack.
