@@ -49,7 +49,7 @@ You can contribute. I don't know how that would work yet, but you can.
 
 ## Versioning
 
-I don't know.
+I don't know, V1?
 
 ## Authors
 
