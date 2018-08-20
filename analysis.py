@@ -11,11 +11,10 @@ main_df['masculine_score'] = None
 main_df['feminine_score'] = None
 main_df['top_appearance'] = None
 main_df['second_appearance'] = None
-
-
-#reads str as dict 
+ 
 for idx, row in main_df.iterrows():
-    pdict = ast.literal_eval(row['clarifai_data'])
+    #reads str as dict
+    pdict = ast.literal_eval(row['clarifai_data']) 
     
     try:
         face_data = pdict['outputs'][0]['data']['regions'][0]['data']['face']
@@ -37,7 +36,6 @@ for idx, row in main_df.iterrows():
         feminine_score = None
 
     # get first and second mc values
-    
     mc_concepts = face_data['multicultural_appearance']['concepts']
     mc_count = 0
     for mcc in mc_concepts:
