@@ -61,7 +61,7 @@ for idx, row in main_df.iterrows():
 # create a dataframe that contains all data in a csv with the fem and masc scores
 main_df.to_csv('all_data_with_scores.csv')
 
-# example slice showing female asians based on the photos
+# example slice showing feminine+asian based on the included photo
 asian_women_df = main_df[
     (main_df.feminine_score >= 0.75) & \
     (main_df.top_appearance=='asian')]
