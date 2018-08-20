@@ -1,7 +1,10 @@
 import pandas as pd
 import ast
 
+# use the data from the csv that we made in face_demographics.py
 main_df = pd.DataFrame.from_csv('main_data.csv')
+
+# remove all NA clarifai data cause it's not helpful
 main_df = main_df[~main_df.clarifai_data.isna()]
 
 main_df['masculine_score'] = None
