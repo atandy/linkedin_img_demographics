@@ -4,6 +4,7 @@ This code will login to your LinkedIn account and conduct a search for you based
 
 In the end, you can slice the data by masc/fem scores and appearance, which enables you to see the breakdown of particular people based on your search. For example, you could search for "Senior Software Engineer at Google" and be able to perform the analysis to see the appearance and gender breakdown in that particular role.
 
+
 ## Getting Started
 
 * Download the repo.
@@ -17,7 +18,7 @@ In the end, you can slice the data by masc/fem scores and appearance, which enab
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Patience with my code; I wrote this very quickly. 
 ```
 
 ## Running the tests
