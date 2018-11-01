@@ -26,16 +26,11 @@ What things you need to install the software and how to install them
 * Clarifai API Key
 * LinkedIn Account
 * A search string, which gets updated in run.py: 'https://www.linkedin.com/search/results/people/?facetCurrentCompany=%5B%221441%22%5D&facetGeoRegion=%5B%22us%3A84%22%5D&keywords=Senior%20Software%20Engineer&origin=FACETED_SEARCH'. 
-* Patience with my code; I wrote this very quickly. 
 ```
-
-## Running the tests
-
-Lol
 
 ## Deployment
 
-Even more LOL.
+I wrote this quickly.
 
 ## Built With
 
